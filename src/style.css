@@ -13,13 +13,18 @@ body {
   margin: 16px;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 16px;
 }
 
-.add-card-button {
+.char-button {
   place-self: start;
   border: none;
   font-family: monospace;
@@ -27,6 +32,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: #0000008d;
   width: 32px;
   height: 32px;
   cursor: pointer;
@@ -40,4 +46,14 @@ body {
     2.95px 2.95px 4.172px -2px #0000001a,
     2.5px 2.5px 3px -2.5px #00000026,
     -0.5px -0.5px 0 0 rgb(0 0 0/10%);
+
+  &:hover {
+    color: #000;
+  }
+}
+
+menu {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
 }

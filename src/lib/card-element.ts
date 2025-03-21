@@ -39,6 +39,22 @@ export class CardElement extends HTMLElement {
       },
     };
   }
+
+  set head(content: string) {
+    this.shadowRoot!.querySelector(`[data-head]`)!.textContent = content;
+  }
+
+  set body(content: string) {
+    this.shadowRoot!.querySelector(`[data-body]`)!.textContent = content;
+  }
+
+  focusHead() {
+    this.shadowRoot!.querySelector<HTMLElement>(`[data-head]`)?.focus();
+  }
+
+  focusBody() {
+    this.shadowRoot!.querySelector<HTMLElement>(`[data-body]`)?.focus();
+  }
 }
 
 export function defineCardElement() {

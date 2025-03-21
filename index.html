@@ -7,9 +7,13 @@
     <title>Vite + TS</title>
   </head>
   <body>
-    <div class="card-grid">
+    <menu>
+      <button id="new-card" class="char-button">+</button>
+      <button id="summarize" class="char-button">=</button>
+      <button id="play" class="char-button">▶</button>
+    </menu>
+    <div id="canvas" class="card-grid">
       <card-element></card-element>
-      <button id="new-card" class="add-card-button">+</button>
     </div>
     <script type="module" src="/src/main.ts"></script>
   </body>
