@@ -80,7 +80,7 @@ type Response = {
 
   const openai = new OpenAI({
     dangerouslyAllowBrowser: true,
-    apiKey: localStorage.getItem("knoll-ai:openai-api-key")!,
+    apiKey: localStorage.getItem("bento-ai:openai-api-key")!,
   });
 }
 
